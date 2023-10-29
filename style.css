@@ -18,7 +18,7 @@ p{
 #container-utama{
   width:1420px;
   height:50%;
-  /*background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/h.jpg');*/
+  /*background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('h.jpg');*/
   animation:animate 16s ease-in-out infinite;
   background-size:cover;
   background-position:center;
@@ -26,16 +26,16 @@ p{
 }
 @keyframes animate{
   0%, 100%{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/h.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('h.jpeg');
   }
   25%{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/17.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('17.jpeg');
   }
   50%{
-     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/18.jpeg');
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('18.jpeg');
   }
   75%{
-     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/19.jpeg');
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('19.jpeg');
   }
 }
 
