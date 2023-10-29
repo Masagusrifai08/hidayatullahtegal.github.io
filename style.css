@@ -1,0 +1,604 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial, helvetica, sans-serif; 
+  background:#FEF6E4;
+  line-height:1.65;
+}
+
+svg{
+  width:1420px;
+}
+
+p{
+  color:#272343;
+}
+#container-utama{
+  width:1420px;
+  height:50%;
+  /*background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/h.jpg');*/
+  animation:animate 16s ease-in-out infinite;
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+@keyframes animate{
+  0%, 100%{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/h.jpeg');
+  }
+  25%{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/17.jpeg');
+  }
+  50%{
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/18.jpeg');
+  }
+  75%{
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('pct/19.jpeg');
+  }
+}
+
+/*slider*/
+#slider{
+  width:1420px;
+  height:35%;
+  overflow:hidden;
+  margin:20px auto; 
+  border-top:5px solid #F3D2C1;
+  border-bottom:5px solid #F3D2C1;
+}
+#slider figure{
+  width:250%;
+  height:100%;
+  left:0;
+  position:relative;
+  margin:0;
+  animation:20s slider infinite; 
+}
+#slider figure .s{
+  float:left;
+  width:20%;
+  height:100%;
+  background:#232946;
+}
+#slider figure .s img{
+  width:100%;
+  height:70%;
+  border-radius:0 0 30px 0;
+}
+#slider figure .s p{
+  width:100%;
+  height:20%;
+  background:#232946;
+  color:#fffffe; 
+  text-align:center;
+}
+#slider figure .s button{
+  height:10%;
+  padding:10px;
+  background:aqua;
+  border:1px solid aqua;
+  position:relative;
+  left:300px;
+  bottom:5px;
+  border-radius:10px;
+  color:#232946;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+#slider figure .s button:hover{
+  background:salmon;
+  border:1px solid salmon; 
+}
+
+@keyframes slider{
+  0%{
+    left:0;
+  }
+  20%{
+    left:0;
+  }
+  25%{
+    left:-100%;
+  }
+  45%{
+    left:-100%;
+  }
+  /*50%{
+    left:-200%;
+  }
+  70%{
+    left:-200%;
+  }
+  75%{
+    left:-300%;
+  }
+  95%{
+    left:-300%;
+  }
+  100%{
+    left:-300%;
+  }*/
+}
+
+/*latihan satu*/
+.container-satu{
+  width:1420px;
+  height:50%;
+  padding:10px;
+  box-sizing:border-box;
+  background:#FEF6E4; 
+  display:flex;
+  justify-content:space-around;
+  margin:50px auto; 
+}
+nav{
+  display:flex;
+  justify-content:space-around;
+}
+nav h2{
+  width:30%;
+}
+.fa-home, .fa-user, .fa-cog{
+  color:salmon;
+
+}
+nav ul{
+  display:flex;
+  width:70%;
+  justify-content:center;
+  display:none;
+}
+nav ul li{
+  list-style:none;
+  margin-right:20px;
+}
+nav ul li a{
+  text-decoration:none;
+  font-family:arial, sans-serif; 
+  color:white;
+}
+#container-utama .hero{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:75%;
+  color:white;
+  text-align:center;
+}
+.tombol button{
+    position:relative;
+    top:300px;
+    padding:10px;
+    background:transparent;
+    border:1px solid #FF8E8c;
+    border-radius:10px;
+    color:#FF8E8C;
+    margin:20px;
+  }
+  .tombol button:hover{
+    background:#FF8E8C;
+    color:#fffffa; 
+  }
+.kolom-utama{
+  flex:3;
+  order:2;
+  background:;
+  word-wrap:break-word;
+}
+#tbl-artikel{
+  background:#ff8e8c;
+  display:none;
+}
+h2,h3{
+  text-align:center;
+}
+.tbl-menu-artikel{
+  display:none;
+  }
+.sidebar-satu{
+ flex:1;
+ order:1;
+ background:;
+ text-align:center;
+}
+.sidebar-satu ul li a{
+  background:#ff8e8c;
+  border:1px solid #f3d2c1; 
+  width:200px;
+  height:50px;
+  display:block;
+  text-decoration:none;
+  color:#f9f8fc;
+}
+.sidebar-satu ul li a:hover{
+  background:aqua;
+  color:#0e172c;
+}
+.sidebar-dua{
+ flex:2;
+ order:3;
+ background:;
+ word-wrap:break-word;
+ line-height:3;
+}
+.sidebar-dua ul li{
+  list-style:none;
+}
+.sidebar-dua ul li a{
+  background:#ff8e8c;
+  border:1px solid #f3d2c1; 
+  flex:2;
+  height:50px;
+  display:block;
+  text-decoration:none;
+  color:#f9f8fc; 
+}
+.sidebar-dua ul li a:hover{
+  background:aqua;
+  color:#0e172c;
+}
+
+/*latihan 2*/
+.container-dua{
+  width:1420px;
+  margin:50px auto;
+  display:flex;
+  justify-content:space-around;
+}
+.layanansatu{
+  background-color:#FF8E8C;
+  width:30%;
+  height:30%;
+  word-wrap:break-word;
+  padding:0;
+  box-sizing:border-box;
+  text-align:center; 
+  border-radius:10px;
+  box-shadow:0 0 10px grey;
+  
+}
+.layanandua{
+  background-color:#FF8E8C;
+  width:30%;
+  height:30%;
+  word-wrap:break-word;
+  padding:0;
+  box-sizing:border-box;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0 0 10px grey; 
+}
+.layanantiga{
+  background-color:#FF8E8C;
+  width:30%;
+  height:30%;
+  word-wrap:break-word;
+  padding:0;
+  box-sizing:border-box;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0 0 10px grey; 
+}
+ .layanansatu img, .layanandua img, .layanantiga img {
+    width:100%;
+    height:50%;
+    border-radius:0 0 50px 0;
+  }
+  #contact{
+    width:1420px;
+    height:400px;
+    background:#232946;
+    display:flex;
+    border-radius:50px;
+    margin:10px auto; 
+  }
+  .contact-profile{
+    width:30%;
+    height:100%;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pct/h.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:50px 0 0 50px; 
+  }
+  .contact-profile img{
+    width:40%;
+    height:40%;
+    border-radius:50%;
+    border:2px solid #232946; 
+  }
+  .contact-profile h4{
+    font-size:20px;
+    margin:15px;
+    color:#fffffe; 
+  }
+  .contact-profile p{
+    font-size:15px;
+    margin:10px;
+    color:#fffffe; 
+  }
+  footer{
+    width:1420px;
+    height:200px;
+    background:#0D0D0D; 
+  }
+  footer p{
+    color:white;
+    font-size:40px;
+    display:flex;
+    align-items:center;
+    height:75%;
+    justify-content; 
+    text-align:center;
+  }
+
+@media screen and (max-width:600px){
+  #container-utama{
+    width:100%;
+    height:100%;
+  }
+  
+  svg{
+    width:100%;
+  }
+  
+  nav h2{
+    font-size:12px;
+    width:100%;
+  }
+  nav ul{
+    width:100%;
+    height:5%;
+    position:fixed;
+    bottom:2px;
+    left:0;
+    right:0;
+    width:100%;
+    background:#fbd3b7;
+    padding:10px;
+    box-shadow:0 5px 10px grey; 
+    display:block;
+    display:flex;
+    justify-content:space-around;
+  }
+  nav a{
+    color:#fffffe; 
+    text-transform:uppercase;
+    margin-top:5px;
+  }
+  nav a img{
+    width:50px;
+    height:50px;
+  }
+  .fa-home, .fa-user, .fa-cog, .fa-envelope, .fa-share{
+    font-size:30px;
+    color:salmon;
+  }
+  .hero h1{
+    font-size:15px;
+  }
+  .tombol button{
+    position:relative;
+    top:150px;
+  }
+  #slider{
+    width:340px;
+    height:50%;
+    margin:10px auto; 
+  }
+  #slider figure{
+    width:500%;
+    height:100%;
+  }
+  #slider figure img{
+    width:20%;
+    height:100%;
+  }
+  #slider figure .s button{
+    left:120px;
+    padding:5px;
+  }
+  
+@keyframes slider{
+  0%{
+    left:0;
+  }
+  20%{
+    left:0;
+  }
+  25%{
+    left:-100%;
+  }
+  45%{
+    left:-100%;
+  }
+  50%{
+    left:-200%;
+  }
+  70%{
+    left:-200%;
+  }
+  75%{
+    left:-300%;
+  }
+  95%{
+    left:-300%;
+  }
+  100%{
+    left:-300%;
+  }
+}
+  
+  .container-satu{
+    flex-direction:column;
+    width:360px;
+    height:1000px;
+    margin:0 auto; 
+  }
+  .tbl-menu-artikel{
+    display:flex;
+    justify-content:space-around;
+  }
+  #tma1, #tma2{
+    padding:10px;
+    border:2px solid #f2d3c1; 
+    border-radius:10px;
+  }
+  .sidebar-satu{
+    order:1;
+    display:none;
+    height:250px;
+  }
+  .sidebar1-toggle{
+    display:block;
+  }
+  .tblsidebar1-toggle{
+    background:royalblue;
+  }
+  .sidebar-satu ul{
+    display:flex;
+    justify-content:space-around;
+    flex-flow:wrap;
+  }
+  .sidebar-satu ul li{
+    list-style:none; 
+  }
+  .sidebar-satu ul li a{
+    width:150px;
+  }
+  .kolom-utama{
+    order:3;
+    margin-top:50px;
+    word-wrap:break-word;
+    width:100%;
+    height:500px;
+    overflow-y:hidden;
+    border-top:5px solid #F3D2C1;
+    border-bottom:5px solid #F3D2C1;
+  }
+  #tbl-artikel{
+    background:#ff8e8c; 
+    display:block;
+  }
+#tbl-artikel:hover{
+  background:royalblue;
+}
+  .fulltext{
+    overflow-y:auto;
+  }
+  .kolom-utama img{
+    width:100%;
+  }
+  .sidebar-dua{
+    order:2;
+    margin-top:40px;
+    width:100%;
+    height:250px;
+    word-wrap:break-word;
+    overflow-y:auto;
+    display:none;
+    border-bottom:5px solid #F3D2C1;
+  }
+ .sidebar2-toggle{
+    display:block;
+  }
+.tblsidebar2-toggle{
+    background:royalblue;
+  }
+  .container-dua{
+    margin:10px auto;
+    flex-direction:column;
+    width:100%;
+    overflow:hidden; 
+  }
+  .layanansatu{
+    margin:10px auto;
+    width:340px;
+    height:360px;
+    overflow:auto;
+    padding:0;
+  }
+  .layanansatu img, .layanandua img, .layanantiga img {
+    width:100%;
+    height:50%;
+    border-radius:0 0 30px 0;
+  }
+  .layanandua{
+    margin:10px auto;
+    overflow:auto;
+    width:340px;
+    height:360px;
+    padding:0;
+  }
+  .layanantiga{
+    margin:10px auto;
+    overflow:auto;
+    width:340px;
+    height:360px;
+    padding:0;
+  }
+  #contact{
+    flex-direction:column;
+    width:95%;
+    height:100%;
+    padding:10px;
+    margin:10px auto; 
+    box-sizing:border-box;
+    border-radius:10px;
+    box-shadow:0 0 10px grey; 
+  }
+  .hasil{
+    margin-top:20px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('pct/n.jpg');
+    background-size:cover;
+    width:100%;
+    height:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#eff0f3; 
+    border-radius:30px;
+  }
+  .fa-quote-right{
+    position:relative;
+    top:50px;
+    right:130px;
+    color:#eff0f3; 
+  }
+  .fa-quote-left{
+    position:relative;
+    bottom:20px;
+    left:140px;
+    color:#eff0f3; 
+  }
+  .contact-profile{
+    width:100%;
+    height:50%;
+    border-radius:30px;
+  }
+  .contact-profile img{
+    width:30%;
+    height:30%;
+  }
+  .contact-profile h4, .contact-profile p{
+    font-size:10px;
+  }
+  form{
+    width:100%;
+    height:100%;
+  }
+  footer{
+    width:100%;
+    height:50px;
+  }
+  footer p{
+    color:white;
+    font-size:15px;
+  }
