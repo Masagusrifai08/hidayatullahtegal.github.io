@@ -16,8 +16,8 @@ p{
   color:#272343;
 }
 #container-utama{
-  width:1420px;
-  height:50%;
+  width:100vh;
+  height:70vh;
   /*background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('h.jpg');*/
   animation:animate 16s ease-in-out infinite;
   background-size:cover;
@@ -41,8 +41,8 @@ p{
 
 /*slider*/
 #slider{
-  width:1420px;
-  height:35%;
+  width:100vh;
+  height:70vh;
   overflow:hidden;
   margin:20px auto; 
   border-top:5px solid #F3D2C1;
